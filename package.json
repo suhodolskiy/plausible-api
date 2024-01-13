@@ -1,0 +1,53 @@
+{
+  "name": "@suhodolskiy/plausible-api",
+  "version": "1.0.0",
+  "private": false,
+  "description": "A simple wrapper over Plausible API",
+  "main": "dist-cjs/index.js",
+  "module": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist",
+    "dist-cjs"
+  ],
+  "exports": {
+    ".": {
+      "require": {
+        "types": "./dist-cjs/types/index.d.ts",
+        "default": "./dist-cjs/index.js"
+      },
+      "import": {
+        "types": "./dist/types/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    }
+  },
+  "scripts": {
+    "test": "jest --passWithNoTests",
+    "build": "tsc & tsc -p tsconfig.cjs.json"
+  },
+  "keywords": [
+    "plausible",
+    "stats",
+    "api"
+  ],
+  "author": "Ilya Suhodolskiy <ilya.suhodolskiy@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suhodolskiy/plausible-api.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@tsconfig/node18": "^18.2.2",
+    "@types/jest": "^29.5.11",
+    "@types/jsdom": "^21.1.6",
+    "@types/node": "^20.11.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jest-fetch-mock": "^3.0.3",
+    "jsdom": "^23.2.0",
+    "prettier": "^3.2.1",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.3.3"
+  }
+}

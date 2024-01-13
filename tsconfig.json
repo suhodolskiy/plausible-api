@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "esnext",
+    "downlevelIteration": true,
+    "lib": ["esnext", "dom"],
+    "declaration": true,
+    "moduleResolution": "node",
+    "declarationDir": "dist/types",
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true
+  },
+  "include": ["lib", "jest.d.ts"],
+  "exclude": ["node_modules", "tsconfig.cjs.json"]
+}
